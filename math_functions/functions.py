@@ -65,7 +65,7 @@ def wedge(a:np.ndarray, b:np.ndarray) -> np.ndarray:
     return return_array
 
 @nb.jit(nb.float64(nb.float64[::1],nb.float64[::1]), nopython=True)
-def wedge_norm(a:np.ndarray, b:np.ndarray) -> np.ndarray:
+def wedge_norm(a:np.ndarray, b:np.ndarray) -> np.float64:
     """Returns the norm of the wedge/exterior product of two vectors.
 
     Args:
